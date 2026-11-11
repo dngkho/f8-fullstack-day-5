@@ -212,3 +212,70 @@ h2.title {
 .highlight-footer {
     font-weight: bold;
 }
+
+/* Menu ----------------------------------------------------------------------------------------------------*/
+
+.wrapper-menu {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    min-height: 100vh;
+    background: url(../img/img-bg-menu.png) center / cover no-repeat;
+}
+
+.menu-list {
+    padding: 0 60px;
+    font-size: 0;
+    background: #3e5cca;
+}
+
+.menu-list .menu-item {
+    display: inline-block;
+    user-select: none;
+    position: relative;
+}
+
+.menu-list .menu-item a {
+    height: 80px;
+    padding: 30px 30px;
+    font-size: 1.6rem;
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu-list .menu-item:hover {
+    color: #000;
+    background: #fff;
+}
+
+.menu-list .menu-item:target {
+    color: #000;
+    background: #fff;
+}
+
+.sub-menu {
+    width: 290px;
+    display: none;
+    position: absolute;
+    color: #fff;
+    background: #3e5cca;
+}
+
+.menu-item:target .sub-menu {
+    display: block;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu .sub-item:hover {
+    color: #000;
+    background: #fff;
+}
+
+.sub-menu .sub-item:target {
+    color: #000;
+    background: #fff;
+}

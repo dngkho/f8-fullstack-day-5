@@ -1,0 +1,133 @@
+:root {
+    --height-header: 60px;
+    --height-container: calc(
+        100vh - var(--height-header) - var(--height-footer)
+    );
+    --height-footer: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:
+        system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-rendering: optimizeSpeed; /* Tối ưu ảnh, video -> optimizeSpeed. Tối ưu văn bản -> optimizeLegibility */
+    -webkit-font-smoothing: antialiased; /* Chrome, Safari, chỉ có tác dụng trên macOS. */
+    -moz-osx-font-smoothing: grayscale; /* Firefox trên macOS */
+}
+
+@media print {
+    body {
+        print-color-adjust: exact !important; /* Hỗ trợ in backgrounds */
+        -webkit-print-color-adjust: exact !important;
+    }
+}
+
+/* index ----------------------------------------------------------------------------------------------------*/
+.wrapper {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    background: rgb(2, 15, 21);
+}
+
+.header {
+    height: var(--height-header);
+    line-height: calc(var(--height-header) - 1px);
+    border-bottom: 1px solid rgb(0, 168, 195);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bt5-header .icon-header {
+    color: rgb(53, 230, 241); /* fallback icon header */
+    margin-right: 4px;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+    .bt5-header .icon-header {
+        color: transparent;
+        background: linear-gradient(
+            45deg,
+            rgb(0, 168, 195) 0%,
+            rgb(53, 230, 241) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+.container {
+    height: var(--height-container);
+}
+
+.bt5-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.bt5-item a {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    margin: 0 40px;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    background-color: rgb(0, 97, 118); /* fallback bg */
+    background: linear-gradient(
+        45deg,
+        rgb(2, 15, 21) 0%,
+        rgb(2, 15, 21) 20%,
+        rgb(7, 45, 56) 20%,
+        rgb(7, 45, 56) 40%,
+        rgb(0, 97, 118) 40%,
+        rgb(0, 97, 118) 60%,
+        rgb(0, 168, 195) 60%,
+        rgb(0, 168, 195) 80%,
+        rgb(53, 230, 241) 80%,
+        rgb(53, 230, 241) 100%
+    );
+    box-shadow: 0px 0px 8px 2px rgba(53, 230, 241, 0.9);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(53, 230, 241, 0.9);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(53, 230, 241, 0.9);
+    transition: transform 0.3s ease;
+}
+
+.bt5-item a:hover {
+    font-weight: bolder;
+    box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 0.9);
+    transform: scale(1.4);
+}
+
+.footer {
+    height: var(--height-footer);
+    line-height: calc(var(--height-footer) - 1px);
+    border-top: 1px solid rgb(0, 168, 195);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .icon-footer {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer .icon-footer:hover {
+    color: rgb(53, 230, 241) !important;
+    transform: scale(1.4);
+}

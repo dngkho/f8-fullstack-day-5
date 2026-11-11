@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <!-- Font Awesome -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+            integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="wrapper-form">
+            <h1 class="header-form">Register</h1>
+            <form
+                method="post"
+                enctype="multipart/form-data"
+                target="_blank"
+                rel="noreferrer nofollow"
+                action="https://api-gateway.f8.edu.vn/action_page.php"
+                class="form-box"
+                autocomplete="off"
+            >
+                <div class="form-group">
+                    <label for="username" class="form-label">
+                        Display Name
+                        <i class="fa-solid fa-asterisk"></i>
+                    </label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        class="form-input"
+                        placeholder="Tên hiển thị"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">
+                        Email
+                        <i class="fa-solid fa-asterisk"></i>
+                    </label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-input"
+                        placeholder="Tên đăng nhập"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="tel" class="form-label">
+                        Phone Number
+                        <i class="fa-solid fa-asterisk"></i>
+                    </label>
+                    <input
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        class="form-input"
+                        placeholder="Số điện thoại"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">
+                        Password
+                        <i class="fa-solid fa-asterisk"></i>
+                    </label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-input"
+                        placeholder="Mật khẩu"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="confirm" class="form-label">
+                        Confirm Password
+                        <i class="fa-solid fa-asterisk"></i>
+                    </label>
+                    <input
+                        type="password"
+                        name="confirm"
+                        id="confirm"
+                        class="form-input"
+                        placeholder="Nhập lại mật khẩu"
+                        spellcheck="false"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Gender</label>
+                    <label>
+                        <input type="radio" name="gender" class="form-input" />
+                        Nam
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" class="form-input" />
+                        Nữ
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" class="form-input" />
+                        Khác
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="date" class="form-label">Date of Birth</label>
+                    <input
+                        type="date"
+                        name="date"
+                        id="date"
+                        class="form-input"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="address" class="form-label">Địa chỉ</label>
+                    <select
+                        name="address"
+                        id="address"
+                        class="form-input"
+                    >
+                        <option value="HN">Hà Nội</option>
+                        <option value="HCM">Hồ Chí Minh</option>
+                        <option value="LD">Lâm Đồng</option>
+                        <option value="36">Thanh Hóa</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="avt-input" class="form-label">
+                        <img
+                            class="avt-img"
+                            src="./img/img-avt-placeholder.jpg"
+                            alt="avatar"
+                        />
+                    </label>
+                    <input
+                        type="file"
+                        name="avt"
+                        id="avt-input"
+                        class="form-input"
+                        accept="image/*"
+                        hidden
+                    />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Communication Preferences</label>
+                    <label class="marketing">
+                        <input
+                            type="checkbox"
+                            name="checkbox"
+                            class="form-input"
+                        />
+                        Subscribe to Newsletter
+                    </label>
+                    <label class="marketing">
+                        <input
+                            type="checkbox"
+                            name="checkbox"
+                            class="form-input"
+                        />
+                        Receive Promotional Emails
+                    </label>
+                    <label class="marketing">
+                        <input
+                            type="checkbox"
+                            name="checkbox"
+                            class="form-input"
+                        />
+                        Get Product Updates
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button class="btn">Login</button>
+                </div>
+            </form>
+            <div class="footer-form"></div>
+        </div>
+    </body>
+</html>

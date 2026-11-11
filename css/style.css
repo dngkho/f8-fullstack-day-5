@@ -279,3 +279,97 @@ h2.title {
     color: #000;
     background: #fff;
 }
+
+/* Form ----------------------------------------------------------------------------------------------------*/
+.wrapper-form {
+    min-height: 100vh;
+    color: #fff;
+    font-size: 1.6rem;
+    background: #191919;
+}
+
+.header-form {
+    height: var(--height-header);
+    line-height: var(--height-header);
+    color: #d97757;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-box {
+    width: 600px;
+    min-height: var(--height-container);
+    margin: 0px auto;
+    border: 1px solid #404040;
+    padding: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #303030;
+    user-select: none;
+}
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 6px; /* margin, padding dọc được nhờ display: block */
+}
+
+.form-label i {
+    color: #d97757;
+    font-size: 1rem;
+}
+
+.form-input {
+    outline: none;
+    border-radius: 4px;
+    padding: 4px 6px;
+    background: #efefef;
+}
+
+.form-input:focus {
+    border: 2px solid #d97757;
+}
+
+.avt-img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #404040;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.avt-img:hover {
+    opacity: 0.6;
+}
+
+.marketing {
+    display: block;
+    padding: 2px;
+}
+
+.btn {
+    margin-top: 8px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 30px;
+    color: #000;
+    background-color: #d97757;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0px 8px 0 rgba(255, 255, 255, 0.6);
+}
+
+.footer-form {
+    height: var(--height-footer);
+}

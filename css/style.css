@@ -131,3 +131,84 @@ body {
     color: rgb(53, 230, 241) !important;
     transform: scale(1.4);
 }
+
+/* CV ----------------------------------------------------------------------------------------------------*/
+.wrapper-cv {
+    min-height: 100vh;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    background-color: rgb(14, 14, 14);
+}
+
+.background-cv {
+    width: 976px;
+    margin: auto;
+    display: flex; /* Khắc phục margin collapse */
+    background: linear-gradient(
+        16deg,
+        rgb(164, 118, 115) 75%,
+        rgb(206 172 168) 75%
+    );
+}
+
+.container-cv {
+    width: 616px;
+    margin: 24px auto 0;
+    background-color: #fff;
+    box-shadow: 16px 40px 4px 10px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 16px 40px 4px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 16px 40px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wrap-content {
+    width: 506px;
+    margin: 28px auto;
+}
+
+.header-cv {
+    text-align: center;
+    line-height: 1.4;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+h1.title {
+    font-size: 1.8rem;
+}
+
+h2.title {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+.heading-3 span {
+    display: inline-block;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.content-cv .title {
+    margin-top: 10px;
+}
+
+.list-content {
+    list-style: disc;
+    padding-left: 16px;
+}
+
+.list-content li::marker {
+    font-size: 1.3rem; /* Tăng kích thước chấm tròn của thẻ li */
+    color: #000;
+}
+
+.highlight-footer {
+    font-weight: bold;
+}
